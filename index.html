@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Moguls</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50%' y='60%' font-size='80' fill='%23D4AF37' text-anchor='middle' font-family='Arial'>R</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes logoIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        
+        .animate-logo-in {
+            animation: logoIn 0.8s ease-out forwards;
+        }
+        
+        .font-montserrat-bold {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        .font-montserrat-regular {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+        
+        .text-gold {
+            color: #D4AF37;
+        }
+        
+        .text-shadow-gold {
+            text-shadow: 0 2px 4px rgba(212, 175, 55, 0.3);
+        }
+        
+        .logo-item {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            background: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        body {
+            background-color: white;
+            color: #001F3F;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center p-6">
+    <div class="max-w-6xl w-full text-center space-y-10">
+        <div class="space-y-6">
+            <h1 class="text-6xl md:text-8xl tracking-tight font-bold font-montserrat-bold opacity-0 translate-y-5 animate-fade-in">
+                REVENUE <span class="text-gold text-shadow-gold">MOGULS</span>
+            </h1>
+            
+            <h2 class="text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed text-gray-600 font-montserrat-regular">
+                Helping creators turn content into revenue<br>
+                We handle the marketing while you focus on creating
+            </h2>
+        </div>
+        
+        <div class="pt-8">
+            <p class="text-sm uppercase tracking-widest mb-6 opacity-70 text-gray-500 font-montserrat-regular">Millions in revenue generated</p>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 max-w-4xl mx-auto">
+                <div class="logo-item opacity-0 translate-y-3 animate-logo-in" style="animation-delay: 100ms">
+                    <span class="company-name">VShred</span>
+                </div>
+                <div class="logo-item opacity-0 translate-y-3 animate-logo-in" style="animation-delay: 200ms">
+                    <span class="company-name">Dan Lok</span>
+                </div>
+                <div class="logo-item opacity-0 translate-y-3 animate-logo-in" style="animation-delay: 300ms">
+                    <span class="company-name">Everbella</span>
+                </div>
+                <div class="logo-item opacity-0 translate-y-3 animate-logo-in" style="animation-delay: 400ms">
+                    <span class="company-name">AmazinglyCat</span>
+                </div>
+                <div class="logo-item opacity-0 translate-y-3 animate-logo-in" style="animation-delay: 500ms">
+                    <span class="company-name">Wonderskin</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
